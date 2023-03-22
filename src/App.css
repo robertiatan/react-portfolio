@@ -1,0 +1,159 @@
+:root {
+  --onyx: #393e41ff;
+  --timberwolf: #d3d0cbff;
+  --platinum: #e7e5dfff;
+  --keppel: #44bba4ff;
+  --saffron: #e7bb41ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--platinum) !important;
+  background-image: url("/yellow-gray-gradient-background-scaled.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color: var(--saffron);
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul :hover {
+  background-color: var(--timberwolf) !important;
+}
+
+.nav a {
+  color: var(--onyx);
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.nav li.active {
+  background-color: var(--timberwolf);
+}
+
+footer {
+  opacity: 0.8;
+  position: fixed;
+  background-color: var(--timberwolf);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+  color: var(--onyx);
+}
+
+a.name {
+  text-decoration: none;
+}
+
+a.name:hover {
+  color: var(--platinum);
+}
+
+a.custom-link {
+  color: var(--onyx);
+  text-decoration: none;
+}
+
+a.custom-link:hover {
+  color: var(--saffron);
+  transform: translateY(-2px);
+}
+
+a.custom-link:active {
+  color: var(--saffron);
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.github {
+  color: black;
+}
+
+a.github:hover {
+  color: white;
+}
+
+a.stackoverflow {
+  color: orange;
+}
+
+a.stackoverflow:hover {
+  color: white;
+}
+
+a.linkedin {
+  color: #0077b5;
+}
+
+a.linkedin:hover {
+  color: white;
+}
+
+div.card {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--timberwolf);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem var(--onyx);
+}
+
+.resume-dots li {
+  list-style-type: none;
+}
+
+.resume-dots li:before {
+  content: "•";
+  color: var(--keppel);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.btn-warning {
+  max-width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
