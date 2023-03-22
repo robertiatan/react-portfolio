@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="name">
-        Robert Alexander Iatan
+        【ＲＩ】
       </Link>
       <ul>
         <CustomLink to="/about" className="custom-link" id="navs">

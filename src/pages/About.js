@@ -51,7 +51,7 @@ function MyVerticallyCenteredModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="warning" onClick={props.onHide}>
+        <Button variant="outline-dark" onClick={props.onHide}>
           Close
         </Button>
       </Modal.Footer>
@@ -84,7 +84,7 @@ export default function About() {
           my previous academic and work experiences I firmly believe that I will
           be an asset to any team.
         </Card.Text>
-        <Button variant="outline-warning" onClick={() => setModalShow(true)}>
+        <Button variant="outline-dark" onClick={() => setModalShow(true)}>
           Click to see my interests!
         </Button>
         <MyVerticallyCenteredModal

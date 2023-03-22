@@ -23,7 +23,11 @@ export default function Resume() {
         Want a copy of my resume? Click the button below to download it and see
         my skills and experience!
       </Card.Text>
-      <Button className="centre" onClick={DownloadResume} variant="warning">
+      <Button
+        className="centre"
+        onClick={DownloadResume}
+        variant="outline-dark"
+      >
         Click to download my Resume!
       </Button>
       <Card className="text-center">

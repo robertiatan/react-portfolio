@@ -2,32 +2,8 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
-
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton></Modal.Header>
-      <Modal.Body>
-        <h1>Thanks for leaving a message! I'll get back to you ASAP!</h1>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="warning" onClick={props.onHide}>
-          Close
-        </Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
 
 export default function Contact() {
-  const [modalShow, setModalShow] = React.useState(false);
-
   return (
     <Card class="contact-card">
       <Card.Header as="h5">Contact</Card.Header>
@@ -52,17 +28,9 @@ export default function Contact() {
           <Form.Label>Your Message Here:</Form.Label>
           <Form.Control type="message" placeholder="Leave me a message!" />
         </Form.Group>
-        <Button
-          // onClick={() => setModalShow(true)}
-          variant="warning"
-          type="submit"
-        >
+        <Button variant="outline-dark" type="submit">
           Submit
         </Button>
-        <MyVerticallyCenteredModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
       </Form>
     </Card>
   );

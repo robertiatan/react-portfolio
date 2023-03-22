@@ -8,15 +8,15 @@
 
 * {
   box-sizing: border-box;
+  background-image: url("/flipped-gradient.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
   margin: 0;
   background-color: var(--platinum) !important;
-  background-image: url("/yellow-gray-gradient-background-scaled.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .container {
@@ -25,8 +25,9 @@ body {
 }
 
 .nav {
+  position: relative;
   background-color: var(--saffron);
-  opacity: 0.5;
+  opacity: 1;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -64,15 +65,12 @@ body {
 }
 
 footer {
-  opacity: 0.8;
   position: fixed;
-  background-color: var(--timberwolf);
   bottom: 0;
   left: 0;
   right: 0;
   padding: 8px;
   text-align: center;
-  color: var(--onyx);
 }
 
 a.name {
@@ -89,12 +87,23 @@ a.custom-link {
 }
 
 a.custom-link:hover {
-  color: var(--saffron);
+  color: var(--onyx) !important;
   transform: translateY(-2px);
 }
 
-a.custom-link:active {
-  color: var(--saffron);
+a.custom-link:focus {
+  color: var(--onyx) !important;
+  transform: translateY(2px);
+}
+
+nav :active {
+  text-decoration: none;
+  z-index: 10;
+}
+
+nav :focus {
+  text-decoration: none;
+  z-index: 10;
 }
 
 a.social {
@@ -152,8 +161,10 @@ div.card {
   margin-left: -1em;
 }
 
-.btn-warning {
+.btn-outline-dark {
   max-width: fit-content;
   display: block;
   margin: 0 auto;
+  z-index: 10;
+  opacity: 100;
 }
