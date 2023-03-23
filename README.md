@@ -20,11 +20,10 @@ To install this project, clone the repository and run `npm install` in the root 
 - [React DOM](https://reactjs.org/docs/react-dom.html)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Font Awesome](https://fontawesome.com/)
-- [Netlify](https://www.netlify.com/)
 
 ## Deployment
 
-This project is deployed on [Netlify](https://www.netlify.com/). The link to the live site is [here](https://robertiatan-portfolio.netlify.com/).
+This project is available on GitHub pages. The link to the project is [here](https://robertiatan.github.io/react-portfolio/).
 
 ## Contributing
 
