@@ -28,7 +28,22 @@ export default function Contact() {
           <Form.Label>Your Message Here:</Form.Label>
           <Form.Control type="message" placeholder="Leave me a message!" />
         </Form.Group>
-        <Button variant="outline-dark" type="submit">
+        <Button
+          variant="outline-dark"
+          type="submit"
+          onClick={() => {
+            if (
+              document.getElementById("formBasicName").value === "" ||
+              document.getElementById("formBasicEmail").value === "" ||
+              document.getElementById("formBasicMessage").value === ""
+            ) {
+              alert("Please fill out all fields!");
+            } else
+              alert(
+                "Thank you for your message! I will get back to you as soon as possible!"
+              );
+          }}
+        >
           Submit
         </Button>
       </Form>
