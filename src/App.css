@@ -8,7 +8,7 @@
 
 * {
   box-sizing: border-box;
-  background-image: url("/flipped-gradient.jpg");
+  background-image: url("../src/images/flipped-gradient.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
