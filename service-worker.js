@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "//robertiatan.github.io/precache-manifest.707784a23136d8db80b1da223cc328ca.js"
+  "//robertiatan.github.io/react-portfolio/precache-manifest.1f581de21aba3c44dce95c25aa358ffb.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("//robertiatan.github.io/index.html", {
+workbox.routing.registerNavigationRoute("//robertiatan.github.io/react-portfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
