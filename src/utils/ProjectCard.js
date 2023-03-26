@@ -9,7 +9,7 @@ export default function ProjectCard() {
   return (
     <CardGroup>
       <Card>
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src="parkapp.png" />
         <Card.Body>
           <Card.Title>Provincial Park Vacation Picker</Card.Title>
           <Card.Text>
@@ -33,7 +33,7 @@ export default function ProjectCard() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src="wedevz-logo.png" />
         <Card.Body>
           <Card.Title>WeDevz</Card.Title>
           <Card.Text>
@@ -56,7 +56,7 @@ export default function ProjectCard() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="" />
+        <Card.Img variant="top" src="pforgood.png" />
         <Card.Body>
           <Card.Title>Partner for Good</Card.Title>
           <Card.Text>

@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+![Demo Gif](public/React%20App.gif)
+
 ## Table of Contents
 
 - [Installation](#installation)
